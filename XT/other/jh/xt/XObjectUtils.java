@@ -1,4 +1,4 @@
-package other.jh.zsjpt;
+package other.jh.xt;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -259,6 +259,7 @@ public class XObjectUtils {
                     limitRow = limitRow + 300;
                 }else {
                     logger.error("查询"+name+"失败. " + result.getErrorMessage());
+                    break;
                 }
             } while (wl.size() == 300);
         } catch (Exception e){
